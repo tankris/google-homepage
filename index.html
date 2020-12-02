@@ -18,17 +18,19 @@
       type="image/x-icon"
       href="resources/favicon.ico"
     />
-    <!-- Linking the font awesome CDN -->
+    <!-- Link to Adobe fonts for the liberation-sans font -->
+    <link rel="stylesheet" href="https://use.typekit.net/wha6azw.css" />
+    <!-- Link to google web fonts for the material design icon -->
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
     />
     <!-- Title to be displayed on the tab -->
     <title>Google Homepage by Tanishq K</title>
     <!-- Link to reset stylesheet -->
     <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
@@ -36,11 +38,14 @@
       <nav>
         <a href="#">Gmail</a>
         <a href="#">Images</a>
-        <!-- th icon, i.e the 9 square box icon -->
-        <i class="fas fa-th"></i>
-        <button>Sign in</button>
+        <!-- menu material design icon -->
+        <a href="#">
+          <span class="material-icons" id="app-menu">apps</span>
+        </a>
+        <button id="sign-in">Sign in</button>
       </nav>
     </header>
+
     <main>
       <!-- Responsive image that loads the appropriate image based on the resolution of the screen -->
       <img

@@ -1,0 +1,82 @@
+html {
+  /* Base font size to use with rem */
+  font-size: 10px;
+  /* Font family to be used for the entire document */
+  font-family: liberation-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  /* Font size for the body */
+  font-size: 1.3rem;
+}
+
+/* Removing text decoration by default */
+a {
+  text-decoration: none;
+}
+
+/* Only displaying the text decoration upon hovering */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Properties for the navigation bar */
+nav {
+  padding: 0.85rem 1.85rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Applying margin to all items in the nav bar */
+nav > * {
+  margin: 0.85rem;
+}
+
+/* Setting color to be applied to hyperlinks in the navigation bar */
+nav > a {
+  color: #27272f;
+}
+
+/* Properties for the app menu icon */
+#app-menu {
+  vertical-align: middle;
+  font-size: 24px;
+  color: #727272;
+}
+
+/* Properties for the app menu icon upon hovering */
+#app-menu:hover {
+  cursor: pointer;
+  color: #262626;
+}
+
+/* Properties for the Sign-in button */
+#sign-in {
+  border: 1px solid #4386f9;
+  border-radius: 0.2rem;
+  padding: 0.7rem 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: white;
+  background-color: #4386f9;
+}
+
+/* Properties for the Sign-in button upon hovering */
+#sign-in:hover {
+  box-shadow: 0 1px 0 0 #d9d9d9;
+}
+
+/* Properties applied on Sign-in button upon activating it, i.e action of pressing it */
+#sign-in:active {
+  box-shadow: inset 0 2px 0 #3367c1;
+  background-color: #3c78df;
+}
+
+/* No outline when focussed on the Sign-in button */
+#sign-in:focus {
+  outline: none;
+}
