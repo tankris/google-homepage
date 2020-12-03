@@ -80,3 +80,63 @@ nav > a {
 #sign-in:focus {
   outline: none;
 }
+
+/* Properties for all footer */
+footer {
+  font-size: 1.43rem;
+}
+
+/* Properties related to the 1st Footer */
+#footer-1 {
+  position: fixed;
+  bottom: 4rem;
+  left: 0;
+  border-top: 1px solid #dadce0;
+  width: 100%;
+  padding: 0 3rem;
+  background-color: #f2f2f2;
+}
+
+/* Properties related to the text within the 1st footer */
+#footer-1 > p {
+  color: #717171;
+  /* Aligning the text to the center */
+  margin: 0;
+  line-height: 4rem;
+}
+
+/* Properties related to the 2nd Footer */
+#footer-2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 1px solid #dadce0;
+  width: 100%;
+  height: 4rem;
+  padding: 0 3rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Setting color of the hyperlinks */
+#footer-2 > div > a {
+  color: #70757a;
+}
+
+/* Setting color of the hyperlinks when active */
+#footer-2 > div > a:active {
+  color: #ea4335;
+}
+
+/* Setting margin for the hyperlinks on the left within 2nd footer */
+#left-footer-2 > a {
+  margin-right: 2.25rem;
+}
+
+/* Setting margin for the hyperlinks on the right within 2nd footer */
+#right-footer-2 > a {
+  margin-left: 2.25rem;
+}
