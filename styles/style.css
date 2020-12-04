@@ -41,38 +41,37 @@ nav > a {
 }
 
 /* Properties for the app menu icon */
-#app-menu {
+#menu-icon {
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #727272;
 }
 
 /* Properties for the app menu icon upon hovering */
-#app-menu:hover {
+#menu-icon:hover {
   cursor: pointer;
   color: #262626;
 }
 
 /* Properties for the Sign-in button */
 #sign-in {
-  border: 1px solid #4386f9;
+  border: 0.1rem solid #4386f9;
   border-radius: 0.2rem;
-  padding: 0.7rem 1.1rem;
+  padding: 0.6rem 1rem;
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 0.05rem;
   color: white;
   background-color: #4386f9;
 }
 
 /* Properties for the Sign-in button upon hovering */
 #sign-in:hover {
-  box-shadow: 0 1px 0 0 #d9d9d9;
+  box-shadow: 0 0.1rem 0 0 #d9d9d9;
 }
 
 /* Properties applied on Sign-in button upon activating it, i.e action of pressing it */
 #sign-in:active {
-  box-shadow: inset 0 2px 0 #3367c1;
+  box-shadow: inset 0 0.2rem 0 #3367c1;
   background-color: #3c78df;
 }
 
@@ -91,7 +90,7 @@ footer {
   position: fixed;
   bottom: 4rem;
   left: 0;
-  border-top: 1px solid #dadce0;
+  border-top: 0.1rem solid #dadce0;
   width: 100%;
   padding: 0 3rem;
   background-color: #f2f2f2;
@@ -111,7 +110,7 @@ footer {
   bottom: 0;
   left: 0;
   box-sizing: border-box;
-  border-top: 1px solid #dadce0;
+  border-top: 0.1rem solid #dadce0;
   width: 100%;
   height: 4rem;
   padding: 0 3rem;
@@ -139,4 +138,103 @@ footer {
 /* Setting margin for the hyperlinks on the right within 2nd footer */
 #right-footer-2 > a {
   margin-left: 2.25rem;
+}
+
+/* Properties for the conent in main content container */
+#google-container {
+  margin: 13.3rem 0;
+}
+
+/* Properties related to the google logo */
+#image-container {
+  display: block;
+  margin: 0 auto 2.75rem auto;
+}
+
+/* Properties related to the search bar */
+#search-bar {
+  max-width: 58rem;
+  min-height: 4.25rem;
+  margin: 0 auto;
+  border: 0.1rem solid #dfe1e5;
+  /* Border radius set on the basis of :-*/
+  /* https://stackoverflow.com/questions/18794947/capsule-shape-using-border-radius-without-a-set-width-or-height */
+  border-radius: 50rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Properties for the search bar upon hovering */
+#search-bar:hover {
+  border-color: transparent;
+  box-shadow: 0 0.1rem 0.5rem 0.25rem #e2e2e3;
+}
+
+/* Property for the search icon in the search bar */
+#search-icon {
+  cursor: default;
+  justify-self: flex-start;
+  padding: 0 1.05rem 0 1.65rem;
+  font-size: 1.85rem;
+  color: #9aa0a6;
+}
+
+/* Properties for the search bar text field */
+#search-input {
+  flex: 1 0 auto;
+  outline: none;
+  border: none;
+  height: 4.1rem;
+  font-size: 1.6rem;
+}
+
+/* Properties for the voice search icon in the search bar */
+#mic-icon {
+  justify-self: flex-end;
+  padding: 0 1.65rem 0 1.05rem;
+  max-height: 2.4rem;
+  max-width: 2.4rem;
+}
+
+/* Properties for the search buttons container below the search bar */
+#search-buttons {
+  width: 28rem;
+  margin: 2.75rem auto 3.25rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Properties for the search buttons within the container */
+#search-buttons > button {
+  box-sizing: border-box;
+  border: 0.175rem solid transparent;
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
+  height: 3.75rem;
+  font-size: 1.4rem;
+  background-color: #f8f9fa;
+  color: #3c4054;
+}
+
+/* Properties for the search buttons upon hovering */
+#search-buttons > button:hover {
+  border-color: #dadce0;
+  box-shadow: 0 0.175rem 0.1rem 0 #ececec;
+}
+
+/* Properties for the search buttons upon focussing */
+#search-buttons > button:focus {
+  outline-color: #75a9fb;
+}
+
+/* Properties regarding google alternate language text */
+#alternate-lang {
+  /* Removing default margin added to p */
+  margin: 0;
+  text-align: center;
+}
+
+/* Properties regarding google alternate language links */
+#alternate-lang > a {
+  margin: 0 0.3rem;
 }
